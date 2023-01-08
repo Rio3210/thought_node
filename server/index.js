@@ -4,21 +4,7 @@ const mongoose=require('mongoose')
 
 const app=express()
 
-// const connect =async ()=>{
-//     try{
-//         await mongoose.connect('mongodb+srv://surafel:3210surayesuwa@cluster0.xaibaci.mongodb.net/?retryWrites=true&w=majority');
-//         console.log("connected to mongodb")
-//     }catch(error){
-//         throw error;
-//     }
 
-// }
-
-// mongoose.connection.on("disconnected" ,()=>{
-//     console.log("mongoDB disconnected!");
-// })
-
-// const tots=connect.get(toughts); /// error occurs here 
 
 app.use(cors())
 app.use(express.json());
