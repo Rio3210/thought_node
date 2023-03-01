@@ -8,23 +8,55 @@ body{
    display: flex;
    flex-direction: column;
    align-items: center;
+   scroll-behavior: smooth;
+   color: #4d5b7c;
 }
 h1{
     text-align: center;
     margin: 2rem auto;
     color: rgb(11, 58, 119);
 }
+.wrapper{
+    display: flex;
+    flex-direction:column ;
+    gap: 2rem;
+    /* box-shadow: 1px 0 2px 1px rgba(0, 0, 0, .4); */
+}
+#getall{
+    cursor: pointer;
+    width: 250px;
+    background-color: rgb(3, 18, 48);
+    font-size: 19px;
+    font-weight: 600;
+}
+
 form{
     display: flex;
     flex-direction: column;
     gap: 1.1rem;
+    width: 600px;
+    margin: 2rem auto;
+}
+label{
+    font-size: 1.3rem;
 }
 input{
     height: 30px;
+    font-size: 1.22rem; 
+    padding-left:.6rem ;
+       
 }
+textarea:focus,
+input:focus{
+    outline: none;
+}
+
 textarea{
-    height: 80px;
-    width: 250px;
+    padding-left: .6rem;
+    height: 120px;
+    width: 100%;
+    resize: none;
+    font-size: 1.25rem; 
 }
 button{
     background-color: rgb(3, 173, 131);
@@ -32,9 +64,15 @@ button{
     border: none;
     font-size: 1.2rem;
     color: #fff;
+    width: 100%;
+    margin: 1rem auto;
+    font-weight: 600;
+    cursor: pointer;
 }
 button:hover{
-    cursor: pointer;
+    color:  rgb(3, 173, 131);
+    background-color: #fff;
+    border:1px solid  rgb(3, 173, 131);
     
 }
 .loading{
@@ -42,4 +80,22 @@ button:hover{
 }
 .loading img{
  scale: 0.6;
+}
+.inner-display{
+    margin: 2rem auto;
+}
+.inner-display h2{
+    text-align: center;
+    padding-bottom: 1.2rem;
+    color:  rgb(11, 58, 119);
+    font-weight: 400;
+}
+.inner-display p{
+    text-align: justify;
+    font-size: 16px;
+}
+.wrapper-dis{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }

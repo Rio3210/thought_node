@@ -8,15 +8,30 @@
     <title>Let's make it cool</title>
 </head>
 <body>
-    <h1>Send your thoughts</h1>
+    
     <main>
-        <form>
-            <label for="name">Name</label>
-            <input class="full-widht" type="text" id="name" name="name">
-            <label for="thought">Your thought</label>
-            <textarea class="full-width" type="text" id="thought" name="thought" cols="30" rows="10"></textarea>
-            <button id="btn">Send</button>
-        </form>
+        <h1>Send your thoughts</h1>
+        <div class="wrapper">
+            <form>
+                <label for="name">Name</label>
+                <input class="full-widht" type="text" id="name" name="name" required>
+                <label for="thought">Your thought</label>
+                <textarea class="full-width" type="text" id="thought" name="thought" cols="30" rows="10" required></textarea>
+                <button id="btn">Send</button>
+            </form>
+            
+        </div>
+        <div class="wrapper-dis">
+            <button id="getall">Get All</button>
+            <div class="display-all">
+                <div class="inner-display">
+                    <h2>Name</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius eveniet veniam fugiat nihil sequi iure accusantium fugit sint, quos ad explicabo nam error voluptas officia tenetur, dolore ipsum! Excepturi, expedita.</p>
+                </div>
+            </div>
+        </div>
+
+       
         <div class="loading">
             <img src="loading.gif" alt="loading">
         </div>
