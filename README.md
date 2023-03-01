@@ -1,5 +1,5 @@
 # thought_node
-#use npm install to check it
+#npm install 
 -----------------------------------------------------------------------
-Simple full stack app
+.Simple full stack app
 #It is a web app where people share their random thoughts.
